@@ -1,5 +1,5 @@
 # Map of Wellington, NZ
-A frontend website application that shows a map of the central business district of Wellington NZ with some of the best places to eat and/or drink highlighted. Users are able to filter locations by type and click on locations to access more detailed information. 
+A frontend website application that shows a map of the central business district of Wellington NZ, with some of the best places to eat and/or drink highlighted. Users are able to filter locations by type and click on locations to access more detailed information. 
 
 Part of Udacity's Full-Stack Nanodegree programme.
 

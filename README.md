@@ -5,6 +5,7 @@ Food on the Fault is hosted by Amazon Lightsail (here).
 
 ## Libraries and APIs
 Application utilises the following: 
+- Javascript
 - Knockout 3.4.2
 - jQuery
 - Google Maps API

@@ -1,4 +1,4 @@
-# Map of Wellington, NZ
+# Map of Wellington, NZ (README under Construction)
 A Flask full-stack website application that shows a map of the central business district of Wellington NZ, with some of the best places to eat and/or drink highlighted. Location data is sourced from a postgreSQL managed database and detailed venue information is accessed using [Foursquare](https://foursquare.com) API. Knockout is used to bind view to model enabling users to filter locations by type and click on locations to access more detailed information. 
 
 Food on the Fault is hosted by Amazon Lightsail (here).

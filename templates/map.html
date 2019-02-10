@@ -1,0 +1,51 @@
+<!-- Centre a Map on Wellington using Google maps -->
+<!--  Needs to be reValidiated on -2019 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food on the Fault</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches"> 
+  <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='css/style-FVI.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="logo-inner">
+          <h1> Food on the Fault</h1>
+           <!-- <h2 class="side-h2"> Wellington, NZ </h2>-->
+        </div>
+      </div>
+     <a href="#menu" class="toggleIcon" data-bind="click: toggleHangouts"> Hide Hangouts &#9776;</a>
+    </header>
+    <section class="main-content">
+      <div class='side-list' id='side-list'>
+        <div class="select-div">
+          <h2>Choose Hobbit Hangouts:</h2>
+          <select data-bind="options: filters, value: filterObject"></select>
+        </div>
+        <ul data-bind="foreach: filteredItems">
+          <li data-bind="text: name, click: $parent.openWindow.bind($data, marker)"></li>
+        </ul>
+        <div class="contact-div">
+          Copyright 2019 - antzie. <br>
+          Email: <a href="mailto:mariantzie@gmail.com?Subject=Food%20on%20the%20Fault" target="_top">mariantzie@gmail.com</a>
+        </div>
+      </div>
+      <div class="map-content" id="map-content">
+      </div>
+    </section>
+  </div>
+  <script src="{{url_for('static', filename='js/libs/jquery.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/libs/knockout-3.4.2.js')}}"></script>
+  <script src="{{url_for('static', filename='js/java-main.js')}}"></script>
+
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR3JLmwOdHyjQs3F-angkqH2d0okYt5wE&v=3&callback=getDataAgain" onerror="mapError()"></script>
+
+</body>
+
+</html>

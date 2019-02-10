@@ -13,6 +13,8 @@ Application utilises the following:
 - Flask
 - Python 2.7
 - SQLalchemy
+- psycopg2
+- pip install psycopg2-binary
 
 The Jquery and Knockout libraries are provided with the application.
 

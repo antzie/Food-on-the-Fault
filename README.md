@@ -12,9 +12,9 @@ Application utilises the following:
 - Foursquare API
 - Flask
 - Python 2.7
-- Apache - et al.
+- SQLalchemy
 
-These libraries are provided with the application.
+The Jquery and Knockout libraries are provided with the application.
 
 ### Set up Application --- This is going to be Difficult. 
 ### Give instructions for Localhosting. 

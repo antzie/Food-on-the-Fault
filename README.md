@@ -1,4 +1,4 @@
-# Map of Wellington, NZ (README under Construction)
+# Map of Wellington, NZ
 A full-stack website application that shows a map of the central business district of Wellington NZ, with some excellent places to eat and/or drink highlighted. Users are able to filter locations by type and click on locations to access more detailed information. 
 
 Location data is sourced from a postgreSQL managed database and venue information is accessed from [Foursquare](https://foursquare.com) API. 

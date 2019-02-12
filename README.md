@@ -1,7 +1,7 @@
 # Map of Wellington, NZ (README under Construction)
-A Flask website application that shows a map of the central business district of Wellington NZ, with some excellent venues to eat and/or drink marked. Users are able to filter venues by type, and access detailed infomation for each venue.  
+A full-stack website application that shows a map of the central business district of Wellington NZ, with some excellent places to eat and/or drink highlighted. Users are able to filter locations by type and click on locations to access more detailed information. 
 
-Location data is sourced from a postgreSQL managed database and venue information is accessed from [Foursquare](https://foursquare.com) API. [Knockout](https://knockoutjs.com/) (MVVM) is employed to bind elements.
+Location data is sourced from a postgreSQL managed database and venue information is accessed from [Foursquare](https://foursquare.com) API. 
 
 Food on the Fault is hosted by Amazon Lightsail [Food-on-the-Fault](http://food-on-the-fault.com/).
 
@@ -24,7 +24,7 @@ Assumes the following python libraries are installed.
 Jquery and Knockout are provided with the application.
 
 ## Installation
-### Option 1 -- Virtual Environment
+### Virtual Environment
 You can use your own, or follow the below instructions to setup a Vagrant VM.
 #### Requirements (for Virtual Environment)
 - [Vagrant](https://www.vagrantup.com/)

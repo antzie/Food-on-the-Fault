@@ -25,29 +25,51 @@ Jquery and Knockout are provided with the application.
 
 ## Installation
 ### Option 1 -- Virtual Environment
+You can use your own, or follow the below instructions to setup a Vagrant VM.
 #### Requirements (for Virtual Environment)
 - [Vagrant](https://www.vagrantup.com/)
 - [Virtual Box](https://www.virtualbox.org/)
-- [PostgreSQL](https://www.postgresql.org/) - (Optional)
 
 #### VM Installation
 Download Virtual Box and Vagrant and install the platform packages for your operating system.
 
-You can download and setup PostgreSQL on the VM yourself [PostgreSQL](https://www.postgresql.org/) and useful [blog post](http://grismar.net/2011/07/22/virtualbox_running_postgresql/)
-
-OR you can use Udacity's preconfigured VM settings from here:
+*Optional* you can use Udacity's preconfigured VM settings from here:
 [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm.git)
-
-Change to directory containing the VM files and change directory to the vagrant directory:
-e.g. fsnd-virtual-machine\FSND-Virtual-Machine\vagrant
-
-Inside the vagrant subdirectory:
-Start the virtual machine
 ``` 
-vagrant up
-vagrant ssh
+git clone https://github.com/udacity/fullstack-nanodegree-vm.git
 ```
-#### PostgreSQL
+
+Change to the directory containing the VM files and change directory to the vagrant directory:
+e.g. fsnd-virtual-machine\FSND-Virtual-Machine\vagrant.
+
+Inside the vagrant subdirectory, start and login to the virtual machine.
+``` 
+$ vagrant up
+$ vagrant ssh
+```
+Inside the VM, change directory to /vagrant 
+```
+$ cd /vagrant
+```
+### Application Setup 
+Inside the VM clone "Food on the Fault":
+```
+$ git clone https://github.com/antzie/Food-on-the-Fault.git 
+```
+Open *setup_db.py*
+``` 
+$ nano setup_db.py
+```
+Change 'engine = create_engine' to
+```
+engine = create_engine('sqlite:///food.db')
+```
+### Run Applications
+Still inside VM
+```
+$ python __init__.py
+```
+Open in browser at [localhost](http://localhost:8000/)
 
 
 

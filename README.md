@@ -64,44 +64,20 @@ Change 'engine = create_engine' to
 ```
 engine = create_engine('sqlite:///food.db')
 ```
-### Run Applications
-Still inside VM
+Setup and populate database:
+```
+$ python setup_db.py
+$ python populate_db.py
+```
+
+### Run Application
+Still inside VM.
 ```
 $ python __init__.py
 ```
 Open in browser at [localhost](http://localhost:8000/)
 
-
-
-From your terminal, inside the vagrant subdirectory, run the command vagrant up. 
-
-### Give instructions for Localhosting. 
-### Install PostgreSQL - Direct them to the documentation for that. 
-(either install in a virtual environment or ... download and configure Udacity's Vagrant Machine???  Ummmm.
-psql -U postgres -W
-create user.
-create db, user
-connect to db
-change ``` postgreSQL:user userpassword@localhost``` in file x. 
-run setup_db
-populate_db
-__init__.py
-
-Go to localhost:8000
-
-Should hopefully be there. 
-Clone or Download github repository: [Food on the Fault](https://github.com/antzie/Food-on-the-Fault)
-
-#### Clone
-Navigate to your local folder of choice
-```
-cd path/
-```
-```
-$ git clone https://github.com/antzie/Food-on-the-Fault.git
-```
-### Run Project
-Open map.html in your favourite browser.
+Food on the Fault hosted at [food-on-the-fault](http://food-on-the-fault.com/)
 
 ## License.
 See License MIT for details.

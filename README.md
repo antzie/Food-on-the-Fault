@@ -15,7 +15,7 @@ Food on the Fault is hosted by Amazon Lightsail [Food-on-the-Fault](http://food-
 ### Python Libraries
 Assumes the following python libraries are installed.
 - Flask 1.0.2
-- SQLAlchemy==1.2.17
+- SQLAlchemy 1.2.17
 
 ### APIs
 - Google Maps API

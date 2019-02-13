@@ -69,7 +69,6 @@ Setup and populate database:
 $ python setup_db.py
 $ python populate_db.py
 ```
-
 ### Run Application
 Still inside VM.
 ```

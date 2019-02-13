@@ -33,7 +33,7 @@ You can use your own, or follow the below instructions to setup a Vagrant VM.
 #### VM Installation
 Download Virtual Box and Vagrant and install the platform packages for your operating system.
 
-*Optional* you can use Udacity's preconfigured VM settings from here:
+*Optional* you can supplement with Udacity's preconfigured VM settings from here:
 [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm.git)
 ``` 
 git clone https://github.com/udacity/fullstack-nanodegree-vm.git
